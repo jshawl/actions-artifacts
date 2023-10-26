@@ -34,3 +34,11 @@ jobs:
         with:
           name: artifacts
           path: out.txt
+      - name: Download artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: artifacts
+      - name: Print the final result
+        shell: bash
+        run: cat out.txt
+
