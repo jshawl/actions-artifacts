@@ -41,4 +41,10 @@ jobs:
       - name: Print the final result
         shell: bash
         run: cat out.txt
-
+      - name: Email
+        uses: cinotify/github-action@attachments
+        with:
+          to: 'jesse@jesse.sh'
+          subject: 'building main'
+          body: 'This is a notification from GitHub actions.'
+          attachment: out.txt
