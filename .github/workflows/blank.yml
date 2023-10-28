@@ -47,4 +47,3 @@ jobs:
           to: 'jesse@jesse.sh'
           subject: 'building main'
           body: 'This is a notification from GitHub actions.'
-          attachment: out.txt
