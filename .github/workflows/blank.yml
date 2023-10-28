@@ -42,7 +42,7 @@ jobs:
         shell: bash
         run: cat out.txt
       - name: Email
-        uses: cinotify/github-action@eae1610dbb128b5bd67528283950476ef8dba274
+        uses: cinotify/github-action@attachments
         with:
           to: 'jesse@jesse.sh'
           subject: 'building main'
